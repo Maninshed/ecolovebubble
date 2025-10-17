@@ -8,7 +8,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -30,7 +30,7 @@ const Navigation = () => {
             <a href="#story" className="text-foreground hover:text-primary transition-colors font-medium">
               Story
             </a>
-            <Button size="sm" className="bg-primary hover:bg-primary/90">
+            <Button size="sm" style={{ backgroundColor: 'hsl(328, 100%, 54%)' }} className="hover:opacity-90 text-white">
               <ShoppingBag className="w-4 h-4 mr-2" />
               Shop
             </Button>
@@ -70,7 +70,7 @@ const Navigation = () => {
             >
               Story
             </a>
-            <Button className="w-full bg-primary hover:bg-primary/90">
+            <Button className="w-full text-white hover:opacity-90" style={{ backgroundColor: 'hsl(328, 100%, 54%)' }}>
               <ShoppingBag className="w-4 h-4 mr-2" />
               Shop Now
             </Button>
